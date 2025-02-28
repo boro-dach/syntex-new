@@ -27,7 +27,7 @@ const Projects = () => {
             <ProjectsCard title='Чат-Бот "Халява от Кошмара v2"' imageSrc='/free_koshmar.png' linkHref='https://t.me/syntex_devlogs/12'/>
           </CollapsibleContent>
           <CollapsibleTrigger asChild>
-            <Button onClick={handleOpen} className=''>Показать {(isOpen ? 'ещё' : 'меньше')}</Button>
+            <Button onClick={handleOpen} className=''>Показать {(isOpen ? 'меньше' : 'больше')}</Button>
           </CollapsibleTrigger>
         </Collapsible>
     </div>
