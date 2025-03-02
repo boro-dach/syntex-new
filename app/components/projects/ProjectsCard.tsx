@@ -16,7 +16,7 @@ const ProjectsCard = ({title, linkHref, imageSrc}: ProjectsCardProps) => {
         <Image src={imageSrc} alt={title} width={384} height={384} className='rounded-xl'/>
         <div className="flex flex-col">
             <h3 className='text-2xl font-bold flex-grow'>{title}</h3>
-            <Link className='underline' href={linkHref}><Button className='bg-white text-black hover:bg-zinc-200 transition-all duration-300'>Узнать больше</Button></Link>
+            <Link className='inline-block w-fit' href={linkHref}><Button className='bg-white text-black hover:bg-zinc-200 transition-all duration-300'>Узнать больше</Button></Link>
         </div>
       </CardContent>
     </Card>
