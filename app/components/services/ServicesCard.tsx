@@ -1,20 +1,61 @@
+'use client';
+
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
-import { LucideIcon } from 'lucide-react'
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 interface ServicesCardProps {
     title: string
     text: string
     number: string
-    icon: LucideIcon
 }
 
-const ServicesCard = ({title, text, number, icon: Icon}: ServicesCardProps) => {
+const ServicesCard = ({title, text, number}: ServicesCardProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+  
   return (
-    <Collapsible className='flex flex-col'>
-      <CollapsibleTrigger><h3 className='text-6xl font-bold border-b border-zinc-800 pb-4 flex flex-row items-center'><span className='pr-8 text-lg align-top font-bold'>{number}</span>{title} <Icon size={32} className='mt-4 ml-4'/></h3></CollapsibleTrigger>
-      <CollapsibleContent className="grid grid-cols-2 grid-rows-1 mt-4">
-        <p>{text}</p>
-      </CollapsibleContent>
+    <Collapsible 
+      className='flex flex-col transition-all duration-300 border-b border-zinc-800' 
+      open={isOpen}
+      onOpenChange={setIsOpen}
+    >
+      <CollapsibleTrigger className="w-full text-left">
+        <h3 className='text-6xl font-bold flex flex-row items-center pb-4'>
+          <span className='pr-8 text-lg align-top font-bold'>{number}</span>
+          {title.toUpperCase()}
+        </h3>
+      </CollapsibleTrigger>
+      
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <CollapsibleContent forceMount asChild>
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ 
+                height: 'auto', 
+                opacity: 1,
+                transition: { 
+                  height: { duration: 0.3 },
+                  opacity: { duration: 0.3, delay: 0.1 }
+                }
+              }}
+              exit={{ 
+                height: 0, 
+                opacity: 0,
+                transition: {
+                  height: { duration: 0.3 },
+                  opacity: { duration: 0.2 }
+                }
+              }}
+              className="overflow-hidden"
+            >
+              <div className="grid grid-cols-2 grid-rows-1 pb-4">
+                <p>{text}</p>
+              </div>
+            </motion.div>
+          </CollapsibleContent>
+        )}
+      </AnimatePresence>
     </Collapsible>
   )
 }
