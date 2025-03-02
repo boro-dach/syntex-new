@@ -8,8 +8,6 @@ const Projects = () => {
   return (
     <div id='projects' className='mt-16 flex flex-col px-16'>
       <h2 className='text-center text-4xl font-bold mb-8'>Наши проекты</h2>
-      
-      {/* Карусель без встроенных кнопок навигации */}
       <Carousel className='max-w-full'>
         <CarouselContent>
           <CarouselItem className='pl-4 basis-1/2'>
