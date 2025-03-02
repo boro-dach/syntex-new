@@ -10,6 +10,7 @@ const Header = () => {
         <div className="flex flex-row items-center gap-8">
             <Link href='#services'>Услуги</Link>
             <Link href='#projects'>Проекты</Link>
+            <Link href='#partners'>Партнёры</Link>
         </div>
         <Button className='bg-white text-black hover:bg-zinc-200 transition-all duration-300 font-bold'>Создать проект</Button>
     </div>
