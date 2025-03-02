@@ -4,7 +4,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div id='hero' className='grid grid-cols-2 grid-rows-1 mt-32 px-16 text-white'>
+    <div id='hero' className='grid grid-cols-2 grid-rows-1 mt-24 px-16 text-white'>
         <div className="flex flex-col justify-center">
             <p className='text-zinc-400'>Более 100 успешных проектов под нашим руководством</p>
             <h1 className='text-5xl font-bold'>Интеллектуальные решения для автоматизации и цифровых интеграций</h1>
