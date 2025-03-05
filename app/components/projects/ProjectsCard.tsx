@@ -11,8 +11,8 @@ interface ProjectsCardProps {
 
 const ProjectsCard = ({title, linkHref, imageSrc}: ProjectsCardProps) => {
   return (
-    <Card className='border border-zinc-800 rounded-xl p-4 bg-black text-white'>
-      <CardContent className='flex flex-row gap-8'>
+    <Card className='border border-zinc-800 rounded-xl p-4 bg-black text-white h-full'>
+      <CardContent className='flex flex-row gap-8 h-full'>
         <Image src={imageSrc} alt={title} width={384} height={384} className='rounded-xl'/>
         <div className="flex flex-col">
             <h3 className='text-2xl font-bold flex-grow'>{title}</h3>

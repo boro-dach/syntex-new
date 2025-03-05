@@ -1,5 +1,5 @@
 'use client';
-import ProjectsCard from './ProjectsCard';
+import ProjectsCard from '../../app/components/projects/ProjectsCard';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import React from 'react';
@@ -41,13 +41,28 @@ const Projects = () => {
       >
         <CarouselContent>
           <CarouselItem className='pl-4 basis-1/2'>
-            <ProjectsCard title='Чат-Бот "Магаз Дядюшки v2"' imageSrc='/uc_shop.png' linkHref='https://t.me/syntex_devlogs/14' />
+            <ProjectsCard title='Чат-Бот "Магаз Дядюшки v2"' imageSrc='/projects/uc_shop.png' linkHref='https://t.me/syntex_devlogs/14' />
           </CarouselItem>
           <CarouselItem className='pl-4 basis-1/2'>
-            <ProjectsCard title='Чат-Бот "Халява Дядюшки v2"' imageSrc='/free.png' linkHref='https://t.me/syntex_devlogs/6' />
+            <ProjectsCard title='Чат-Бот "Халява Дядюшки v2"' imageSrc='/projects/free.png' linkHref='https://t.me/syntex_devlogs/6' />
           </CarouselItem>
           <CarouselItem className='pl-4 basis-1/2'>
-            <ProjectsCard title='Чат-Бот "Халява от Кошмара v2"' imageSrc='/free_koshmar.png' linkHref='https://t.me/syntex_devlogs/12' />
+            <ProjectsCard title='Чат-Бот "Халява от Кошмара v2"' imageSrc='/projects/free_koshmar.png' linkHref='https://t.me/syntex_devlogs/12' />
+          </CarouselItem>
+          <CarouselItem className='pl-4 basis-1/2'>
+            <ProjectsCard title='Чат-Бот "Турниры от Кошмара"' imageSrc='/projects/tournaments.png' linkHref='https://t.me/syntex_devlogs/15' />
+          </CarouselItem>
+          <CarouselItem className='pl-4 basis-1/2'>
+            <ProjectsCard title='Веб-сайт "TitanTrucks"' imageSrc='/projects/titantrucks.png' linkHref='https://t.me/syntex_devlogs/18' />
+          </CarouselItem>
+          <CarouselItem className='pl-4 basis-1/2'>
+            <ProjectsCard title='Чат-Бот "SyNET" и система' imageSrc='/projects/synet.png' linkHref='https://t.me/synet_tech' />
+          </CarouselItem>
+          <CarouselItem className='pl-4 basis-1/2'>
+            <ProjectsCard title='Чат-Бот "Кошмар UC Shop"' imageSrc='/projects/koshmar_uc.jpg' linkHref='https://t.me/synet_tech' />
+          </CarouselItem>
+          <CarouselItem className='pl-4 basis-1/2'>
+            <ProjectsCard title='Чат-Бот "AURORA UC SHOP"' imageSrc='/projects/aurora_uc.png' linkHref='https://t.me/auroramagaz_bot' />
           </CarouselItem>
         </CarouselContent>
         <div className="flex justify-center gap-4 mt-6 text-black">
