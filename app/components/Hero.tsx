@@ -18,7 +18,7 @@ const Hero = () => {
         <motion.p
           initial="hidden"
           animate="visible"
-          variants={{ ...textVariants, visible: { ...textVariants.visible, transition: { delay: 2 } } }}
+          variants={{ ...textVariants, visible: { ...textVariants.visible, transition: { delay: 1 } } }}
           className='text-zinc-400'
         >
           Более 100 успешных проектов под нашим руководством
