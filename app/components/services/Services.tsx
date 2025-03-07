@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <motion.div 
       id='services' 
-      className='mt-16 flex flex-col px-16'
+      className='mt-16 flex flex-col md:px-16 px-8'
       initial="hidden"
       animate="visible"
       variants={{

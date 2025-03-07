@@ -13,13 +13,13 @@ const Hero = () => {
   };
 
   return (
-    <div id='hero' className='grid grid-cols-2 grid-rows-1 mt-24 px-16 text-white'>
+    <div id='hero' className='grid md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-1 mt-24 md:px-16 px-8 text-white'>
       <div className="flex flex-col justify-center">
         <motion.p
           initial="hidden"
           animate="visible"
           variants={{ ...textVariants, visible: { ...textVariants.visible, transition: { delay: 1 } } }}
-          className='text-zinc-400'
+          className='text-zinc-400 md:text-base text-xs'
         >
           Более 100 успешных проектов под нашим руководством
         </motion.p>
@@ -28,7 +28,7 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           variants={{ ...textVariants, visible: { ...textVariants.visible, transition: { delay: 0.2 } } }}
-          className='text-5xl font-bold'
+          className='md:text-5xl text-2xl font-bold'
         >
           Интеллектуальные решения для автоматизации и цифровых интеграций
         </motion.h1>
@@ -37,7 +37,7 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           variants={{ ...textVariants, visible: { ...textVariants.visible, transition: { delay: 0.5 } } }}
-          className='mt-4 mb-8'
+          className='mt-4 mb-8 md:text-base text-sm'
         >
           SynTex Develop - эксперт в разработке Telegram-ботов, API, систем автоматизации и парсеров. Мы помогаем бизнесам оптимизировать процессы, интегрировать цифровые инструменты и достигать новых высот с помощью интеллектуальных решений, созданных под ваши уникальные задачи
         </motion.h2>
@@ -62,6 +62,7 @@ const Hero = () => {
 
       {/* Правая часть с видео */}
       <motion.div
+        className='md:block hidden'
         initial="hidden"
         animate="visible"
         variants={{ ...textVariants, visible: { ...textVariants.visible, transition: { delay: 0.8 } } }}

@@ -20,8 +20,8 @@ const ServicesCard = ({title, text, number}: ServicesCardProps) => {
       onOpenChange={setIsOpen}
     >
       <CollapsibleTrigger className="w-full text-left">
-        <h3 className='text-6xl font-bold flex flex-row items-center pb-4'>
-          <span className='pr-8 text-lg align-top font-bold'>{number}</span>
+        <h3 className='md:text-6xl text-2xl font-bold flex flex-row items-center pb-4'>
+          <span className='pr-8 md:text-lg text-sm align-top font-bold'>{number}</span>
           {title.toUpperCase()}
         </h3>
       </CollapsibleTrigger>
@@ -49,7 +49,7 @@ const ServicesCard = ({title, text, number}: ServicesCardProps) => {
               }}
               className="overflow-hidden"
             >
-              <div className="grid grid-cols-2 grid-rows-1 pb-4">
+              <div className="grid grid-cols-2 grid-rows-1 pb-4 md:text-base text-sm">
                 <p>{text}</p>
               </div>
             </motion.div>
