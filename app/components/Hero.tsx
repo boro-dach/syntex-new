@@ -28,7 +28,7 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           variants={{ ...textVariants, visible: { ...textVariants.visible, transition: { delay: 0.2 } } }}
-          className='md:text-5xl text-2xl font-bold'
+          className='md:text-5xl text-3xl font-bold'
         >
           Интеллектуальные решения для автоматизации и цифровых интеграций
         </motion.h1>
