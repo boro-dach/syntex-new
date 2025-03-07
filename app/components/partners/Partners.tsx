@@ -29,8 +29,8 @@ const Partners = () => {
       <div className='flex flex-row items-center justify-center grayscale md:gap-32 gap-8'>
         <img
           className='rounded-xl md:w-32 md:h-32 w-24 h-24'
-          src={'/partners/xpay.png'}
-          alt='XPAY'
+          src={'/partners/ezepay.png'}
+          alt='EzePay'
         />
         <img
           className='rounded-xl md:w-32 md:h-32 w-24 h-24'
