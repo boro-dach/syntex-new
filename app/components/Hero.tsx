@@ -13,8 +13,8 @@ const Hero = () => {
   };
 
   return (
-    <div id='hero' className='grid md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-1 mt-24 md:px-16 px-8 text-white'>
-      <div className="flex flex-col justify-center">
+    <div id='hero' className='grid md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-1 md:mt-24 mt-12 md:px-16 px-8 text-white'>
+      <div className="flex flex-col justify-center z-10">
         <motion.p
           initial="hidden"
           animate="visible"
