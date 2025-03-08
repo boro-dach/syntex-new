@@ -8,7 +8,7 @@ import { Menu } from 'lucide-react'
 const Header = () => {
   return (
     <div className='sticky top-0 h-16 md:px-16 px-8 md:text-base text-sm flex flex-row items-center justify-between md:gap-8 gap-0 backdrop-blur-lg z-50'>
-        <Link href={'#hero'}><img src='/textlogo.png' alt='logo' className='h-12'/></Link>
+        <Link href={'#hero'}><img src='/textlogo.png' alt='logo' className='md:h-12 h-8'/></Link>
         <div className="md:flex hidden flex-row items-center gap-8">
             <Link href='#services'>Услуги</Link>
             <Link href='#projects'>Проекты</Link>
