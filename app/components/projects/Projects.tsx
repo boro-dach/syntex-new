@@ -37,8 +37,8 @@ const Projects = () => {
         onMouseEnter={plugin.current.stop}
         onMouseLeave={() => { plugin.current.play() }}
       >
-        <CarouselContent className='mb-4'>
-          <CarouselItem className='pl-4 md:basis-1/2 basis-1/1'>
+        <CarouselContent className='mb-4 max-w-full'>
+          <CarouselItem className='pl-4 md:basis-1/2 basis-1/1 max-w-full'>
             <ProjectsCard title='Чат-Бот "Магаз Дядюшки v2"' imageSrc='/projects/uc_shop.png' linkHref='https://t.me/syntex_devlogs/14' />
           </CarouselItem>
           <CarouselItem className='pl-4 basis-1/2 basis-1/1'>
