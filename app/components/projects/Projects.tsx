@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <motion.div
       id='projects'
-      className='mt-16 flex flex-col md:px-16 px-8'
+      className='md:mt-16 mt-24 flex flex-col md:px-16 px-8'
       ref={ref} 
       initial="hidden" 
       animate={inView ? 'visible' : 'hidden'} 
