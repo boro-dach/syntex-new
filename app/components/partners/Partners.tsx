@@ -19,7 +19,7 @@ const Partners = () => {
   return (
     <motion.div
       id='partners'
-      className='md:mt-16 mt-24 flex flex-col md:px-16 px-8'
+      className='mt-32 flex flex-col md:px-16 px-8'
       ref={ref}
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
