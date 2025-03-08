@@ -49,7 +49,7 @@ const ServicesCard = ({title, text, number}: ServicesCardProps) => {
               }}
               className="overflow-hidden"
             >
-              <div className="grid grid-cols-2 grid-rows-1 pb-4 md:text-base text-sm">
+              <div className="grid md:grid-cols-2 grid-cols-1 md:mx-0 mx-4 grid-rows-1 pb-4 md:text-base text-sm">
                 <p>{text}</p>
               </div>
             </motion.div>
