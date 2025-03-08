@@ -30,7 +30,7 @@ const Projects = () => {
       animate={inView ? 'visible' : 'hidden'} 
       variants={variants} 
     >
-      <h2 className='text-center text-4xl font-bold mb-8'>Наши проекты</h2>
+      <h2 className='text-center text-4xl font-bold mb-8'>НАШИ ПРОЕКТЫ</h2>
       <Carousel
         className='max-w-full'
         plugins={[plugin.current]}

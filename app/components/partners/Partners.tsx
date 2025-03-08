@@ -25,7 +25,7 @@ const Partners = () => {
       animate={inView ? 'visible' : 'hidden'}
       variants={variants} 
     >
-      <h2 className='text-center text-4xl font-bold mb-8'>Наши партнёры</h2>
+      <h2 className='text-center text-4xl font-bold mb-8'>НАШИ ПАРТНЁРЫ</h2>
       <div className='flex flex-row items-center justify-center grayscale md:gap-32 gap-8'>
         <img
           className='rounded-xl md:w-32 md:h-32 w-24 h-24'

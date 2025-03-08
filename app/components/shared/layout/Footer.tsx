@@ -26,7 +26,7 @@ const Footer = () => {
       animate={inView ? 'visible' : 'hidden'} 
       variants={variants} 
     >
-      <h2 className='md:text-5xl text-2xl font-bold mt-8 md:mb-8 mb-4'>Связаться с нами:</h2>
+      <h2 className='md:text-5xl text-2xl font-bold mt-8 md:mb-8 mb-4'>СВЯЗАТЬСЯ С НАМИ:</h2>
       <Link className='underline mb-4 w-fit md:text-xl text-lg' href={'https://t.me/zako_abb'}>
         https://t.me/zako_abb
       </Link>
