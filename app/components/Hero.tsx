@@ -49,9 +49,7 @@ const Hero = () => {
           variants={{ ...textVariants, visible: { ...textVariants.visible, transition: { delay: 1 } } }}
           className="grid grid-cols-2 grid-rows-1 gap-4"
         >
-          <Button className='bg-white text-black hover:bg-zinc-200 transition-all duration-300 font-bold'>
-            Создать проект
-          </Button>
+          <Link href={'https://t.me/zako_abb'}><Button className='bg-white text-black hover:bg-zinc-200 transition-all duration-300 font-bold w-full'>Создать проект</Button></Link>
           <Link className='block w-full' href='#projects'>
             <Button className='bg-black text-white border border-zinc-800 hover:bg-zinc-900 transition-all duration-300 font-bold w-full'>
               Примеры работ

@@ -15,7 +15,7 @@ const Header = () => {
             <Link href='#partners'>Партнёры</Link>
         </div>
         <div className="flex flex-row items-center gap-2">
-          <Button className='bg-white text-black hover:bg-zinc-200 transition-all duration-300 font-bold'>Создать проект</Button>
+          <Link className='w-fit' href={'https://t.me/zako_abb'}><Button className='bg-white text-black hover:bg-zinc-200 transition-all duration-300 font-bold'>Создать проект</Button></Link>
             <div className="md:hidden block">
               <DropdownMenu>
                 <DropdownMenuTrigger className='border border-zinc-800 rounded-md p-2'>
